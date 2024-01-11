@@ -1,8 +1,8 @@
 
 
 const result = document.querySelector("#result")
-let playerScore = document.querySelector("#playerScore")
-let computerScore = document.querySelector("#computerScore")
+const playerScore = document.querySelector("#playerScore")
+const computerScore = document.querySelector("#computerScore")
 let yourScore  = 0
 let hisScore = 0
 
@@ -10,9 +10,10 @@ const playerResult = document.querySelector("#playersResult")
 const computerResult = document.querySelector("#computerResult")
 
 const rundenanzeige = document.querySelector("#rundenanzeige")
-// const schereBtn = document.querySelector("#schere")
-// const steinBtn = document.querySelector("#stein")
-// const papierBtn = document.querySelector("#papier")
+
+const schereBtn = document.querySelector("#schere")
+const steinBtn = document.querySelector("#stein")
+const papierBtn = document.querySelector("#papier")
 
 const reset =  document.querySelector("#reset")
 
@@ -64,6 +65,6 @@ const game = (playersChoice) => {
 
 }
 
-const schereBtn = () => game("schere")
-const steinBtn = () => game("stein")
-const papierBtn = () => game("papier")
+schereBtn.addEventListener("click", () => game("schere"))
+steinBtn.addEventListener("click", () => game("stein"))
+papierBtn.addEventListener("click", () => game("papier"))
