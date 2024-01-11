@@ -8,7 +8,7 @@
 <body>
     <section>
         <div>
-            <h2>How many rounds?</h2>
+            <h2 id="rundenanzeige">How many rounds?</h2>
             <input type="radio" name="runden" id="five" value="5" checked>
             <label for="five">5</label>
             <input type="radio" name="runden" id="ten" value="10">
@@ -19,16 +19,16 @@
             <label for="twenty">20</label>
         </div>
         <div>
-            <div id="playersChoice"></div>
+            <div id="playersResult"></div>
             <p><span id="playerScore">0</span> : <span id="computerScore">0</span></p>
-            <div id="computerChoice"></div>
+            <div id="computerResult"></div>
         </div>
         <div>
             <h2 id="result">Let's play</h2>
             <div>
-                <button id="schere">schere</button>
-                <button id="stein">stein</button>
-                <button id="papier">papier</button>
+                <button id="schere" onclick="schereBtn()">schere</button>
+                <button id="stein" onclick="steinBtn()">stein</button>
+                <button id="papier" onclick="papierBtn()">papier</button>
             </div>
             <p>MAKE YOUR MOVE</p>
         </div>
