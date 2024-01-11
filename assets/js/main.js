@@ -4,19 +4,17 @@ const computerScore = document.querySelector("#computerScore")
 const playerResult = document.querySelector("#playersResult")
 const computerResult = document.querySelector("#computerResult")
 const rundenanzeige = document.querySelector("#rundenanzeige")
+let rundenType = document.querySelector("input[type=radio]:checked")
 
 const schereBtn = document.querySelector("#schere")
 const steinBtn = document.querySelector("#stein")
 const papierBtn = document.querySelector("#papier")
-
 const reset =  document.querySelector("#reset")
 
 let start = 0
 let counter = 0
 let yourScore  = 0
 let hisScore = 0
-
-let rundenType = document.querySelector("input[type=radio]:checked")
 
 const game = (playersChoice) => {
     rundenType = document.querySelector("input[type=radio]:checked").value
