@@ -36,7 +36,7 @@ section {
     align-items: center;
     background: rgba(45, 132, 253, 0.5);
     border-radius: 7px;
-    box-shadow: 10px -5px 5px rgba(0, 128, 128, 0.434);
+    box-shadow: -10px 5px 5px rgba(0, 128, 128, 0.434);
     padding: 2rem;
 }
 
