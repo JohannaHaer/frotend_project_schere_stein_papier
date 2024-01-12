@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Bungee';
+    src: url('../fonts/Bungee_Spice/BungeeSpice-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Noto_Sans';
+    src: url('../fonts/NotoSans-VariableFont_wdth\,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto_Sans';
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(7deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 100%);
+    padding: 2rem;
+}

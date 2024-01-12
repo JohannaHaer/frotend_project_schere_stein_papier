@@ -4,6 +4,7 @@ const computerScore = document.querySelector("#computerScore")
 const playerResult = document.querySelector("#playersResult")
 const computerResult = document.querySelector("#computerResult")
 const rundenanzeige = document.querySelector("#rundenanzeige")
+const radioBtn = document.querySelector("#radioBtn")
 let rundenType = document.querySelector("input[type=radio]:checked")
 
 const schereBtn = document.querySelector("#schere")
@@ -31,7 +32,7 @@ const game = (playersChoice) => {
     let computerChoice = computer()
 
     if (start < rundenType) {
-        
+        radioBtn.style.display = 'none'
         if (computerChoice === playersChoice) {
             result.textContent = "Draw"
             playerResult.textContent = `${playersChoice}`
