@@ -13,18 +13,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto_Sans';
+    color: white;
 }
 
 body {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(7deg, rgba(2,0,36,1) 0%, rgba(16,16,40,1) 8%, rgba(11,81,96,1) 100%);
 }
+
+
 
 section {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(7deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 100%);
+    gap: 1rem;
+    width: 30%;
+    align-items: center;
+    background: rgba(45, 132, 253, 0.5);
+    border-radius: 7px;
+    box-shadow: 10px -5px 5px rgba(0, 128, 128, 0.434);
     padding: 2rem;
+}
+
+.rundenanzeige {
+    font-size: 2rem;
 }
