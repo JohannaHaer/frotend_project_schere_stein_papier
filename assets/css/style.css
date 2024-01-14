@@ -82,6 +82,11 @@ button {
     font-size: 2rem;
 }
 
+.reset {
+    background-color: rgba(0, 128, 128);;
+    
+}
+
 .popUpPlayer {
     position: absolute;
     top: auto;
@@ -106,4 +111,5 @@ button {
     padding-left: 1rem;;
     gap: 1rem;
     background: url('../img/federica-galli-aiqKc07b5PA-unsplash.jpg') center/cover no-repeat;
+    color:  rgba(0, 128, 128); 
 }
