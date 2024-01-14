@@ -10,27 +10,35 @@
     <h1>Schnick Schnack Schnuck</h1>
     <section>
         <h2 id="rundenanzeige" class="rundenanzeige">Best of</h2>
-        <div id="radioBtn">
-            <input type="radio" name="runden" id="five" value="5" checked>
-            <label for="five">5</label>
-            <input type="radio" name="runden" id="seven" value="7">
-            <label for="ten">7</label>
-            <input type="radio" name="runden" id="nine" value="9">
-            <label for="fifteen">9</label>
-            <input type="radio" name="runden" id="eleven" value="11">
-            <label for="twenty">11</label>
-        </div>
-        <div>
-            <div id="playersResult"></div>
-            <p><span id="playerScore">0</span> : <span id="computerScore">0</span></p>
-            <div id="computerResult"></div>
-        </div>
-        <div>
-            <h2 id="result">Let's play</h2>
+        <div id="radioBtn" class="radioBtn">
             <div>
-                <button id="schere">schere</button>
-                <button id="stein">stein</button>
-                <button id="papier">papier</button>
+                <input type="radio" name="runden" id="five" value="5" checked>
+                <label for="five">5</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="seven" value="7">
+                <label for="ten">7</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="nine" value="9">
+                <label for="fifteen">9</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="eleven" value="11">
+                <label for="twenty">11</label>
+            </div>
+        </div>
+        <div class="scoreAnzeige">
+            <div id="playersResult" class="playersResult"></div>
+            <p class="score"> <span id="playerScore" class="playerScore"> 0</span> : <span id="computerScore">0 </span> </p>
+            <div id="computerResult" class="computerResult"></div>
+        </div>
+        <div class="playMode">
+            <h2 id="result">Let's play</h2>
+            <div class="schereSteinPapier">
+                <button id="schere">✂️</button>
+                <button id="stein">🪨</button>
+                <button id="papier">🧻</button>
             </div>
             <p>MAKE YOUR MOVE</p>
         </div>

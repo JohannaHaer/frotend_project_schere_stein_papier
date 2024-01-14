@@ -22,11 +22,11 @@ const game = (playersChoice) => {
     const computer = () => {
         const computer = Math.floor(Math.random() * 3) +1
         if(computer === 1) {
-            return "schere"
+            return "✂️"
         } else if (computer === 2) {
-            return "stein"
+            return "🪨"
         } else {
-            return "papier"
+            return "🧻"
         }
     }
     let computerChoice = computer()
@@ -38,12 +38,12 @@ const game = (playersChoice) => {
             playerResult.textContent = `${playersChoice}`
             computerResult.textContent = `${computerChoice}`
             rundenanzeige.innerHTML = `<h2>${counter} / ${rundenType}</h2>`
-        } else if ((computerChoice === "schere" && playersChoice === "stein") || (computerChoice === "stein" && playersChoice === "papier") || computerChoice === "papier" && playersChoice === "schere") {
+        } else if ((computerChoice === "" && playersChoice === "🪨") || (computerChoice === "🪨" && playersChoice === "🧻") || computerChoice === "🧻" && playersChoice === "✂️") {
             start++
             result.textContent = "You win this round"
             yourScore++
             counter++
-            playerScore.textContent =`${yourScore}`
+            playerScore.textContent =`${yourScore} `
             playerResult.textContent = `${playersChoice}`
             computerResult.textContent = `${computerChoice}`
             rundenanzeige.innerHTML = `<h2>${counter} / ${rundenType}</h2>`
@@ -54,12 +54,12 @@ const game = (playersChoice) => {
                 popUpPlayer.appendChild(reset)
                 document.body.appendChild(popUpPlayer)
             }
-        } else if ((computerChoice === "stein" && playersChoice === "schere") || (computerChoice === "papier" && playersChoice === "stein") || computerChoice === "schere" && playersChoice === "papier") {
+        } else if ((computerChoice === "🪨" && playersChoice === "✂️") || (computerChoice === "🧻" && playersChoice === "🪨") || computerChoice === "✂️" && playersChoice === "🧻") {
             start++
             counter++
             result.textContent = "You lose this round"
             hisScore++
-            computerScore.textContent =`${hisScore}`
+            computerScore.textContent =` ${hisScore}`
             playerResult.textContent = `${playersChoice}`
             computerResult.textContent = `${computerChoice}`
             rundenanzeige.innerHTML = `<h2>${counter} / ${rundenType}</h2>`
@@ -75,8 +75,8 @@ const game = (playersChoice) => {
     }
 }
 
-schereBtn.addEventListener("click", () => game("schere"))
-steinBtn.addEventListener("click", () => game("stein"))
-papierBtn.addEventListener("click", () => game("papier"))
+schereBtn.addEventListener("click", () => game("✂️"))
+steinBtn.addEventListener("click", () => game("🪨"))
+papierBtn.addEventListener("click", () => game("🧻"))
 
 reset.addEventListener("click", () => location.reload())
