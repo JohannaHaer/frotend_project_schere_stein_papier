@@ -12,7 +12,7 @@ Das Spiel folgt den klassischen Regeln von Schere, Stein, Papier:
 🧻 schlägt 🪨
 
 # Author
-- [@philipkuerzel] (https://github.com/philipkuerzel)
+- [@philipkuerzel](https://github.com/philipkuerzel)
 - [@JohannaHaer](https://github.com/JohannaHaer)
 
 # Mockups
