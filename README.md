@@ -17,12 +17,7 @@ Das Spiel folgt den klassischen Regeln von Schere, Stein, Papier:
 
 # Mockups
 Rundenauswahl
-![Mockup Website Landingpage](./assets/img/1.png)
+![Mockup Website Landingpage](./assets/img/Spielrundenauswahl.png)
 
 Spielstand
-![Mockup Website Mobile Version](./assets/img/2.png)
-
-Gewinner
-![Mockup Website Desktop Version](./assets/img/3.png)
-
-
+![Mockup Website Mobile Version](./assets/img/Zwischenstand.png)
